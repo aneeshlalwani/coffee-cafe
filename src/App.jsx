@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/HeroSection/Hero";
 import Products from "./components/ProductsCard/Products";
 import Banner from "./components/Banner/Banner";
+import AppStore from "./components/AppStore/AppStore";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
         <Hero />
         <Products />
         <Banner />
+        <AppStore />
       </div>
     </>
   );
