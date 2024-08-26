@@ -6,6 +6,7 @@ import Hero from "./components/HeroSection/Hero";
 import Products from "./components/ProductsCard/Products";
 import Banner from "./components/Banner/Banner";
 import AppStore from "./components/AppStore/AppStore";
+import Testimonials from "./components/Testimonial/Testimonials";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
         <Products />
         <Banner />
         <AppStore />
+        <Testimonials />
       </div>
     </>
   );
