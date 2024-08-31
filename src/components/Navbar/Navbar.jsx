@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="container py-2">
           <div className="flex justify-between items-center gap-4">
             {/* Logo */}
-            <div className="flex">
+            <div className="flex" data-aos="fade-down" data-aos-once="true">
               <img src={logo} alt="Cafe Logo" className="w-14" />
               <a
                 href="#"
@@ -35,7 +35,12 @@ const Navbar = () => {
               </a>
             </div>
             {/* Navigation Links */}
-            <div className="flex justify-between items-center gap-4">
+            <div
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-delay="300"
+              className="flex justify-between items-center gap-4"
+            >
               <ul className="hidden sm:flex items-center gap-4">
                 {navigationLinks.map((link, index) => (
                   <li key={index}>

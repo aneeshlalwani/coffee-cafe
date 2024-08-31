@@ -77,17 +77,17 @@ const Testimonials = () => {
       <div className="py-14 mb-20">
         <div className="container">
           {/* Header */}
-          <div className="text-center mb-20">
+          <div data-aos="fade-up" className="text-center mb-20">
             <h1 className="text-4xl font-bold font-cursive text-gray-800 capitalize">
               testimonial
             </h1>
           </div>
           {/* Testimonials Section */}
-          <div>
+          <div data-aos="zoom-in">
             <Slider {...settings}>
               {testimonialsData.map((data, index = data.id) => (
                 <div key={index} className="my-6">
-                  <div className="flex flex-col gap-4 shadow-xl py-8 mx-4 rounded-xl bg-primary/10 relative">
+                  <div className="flex flex-col gap-4 shadow-xl py-8 mx-4 px-5 rounded-xl bg-primary/10 relative">
                     {/* Image */}
                     <div className="mb-4">
                       <img

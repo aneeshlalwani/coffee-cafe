@@ -16,11 +16,12 @@ const bgImage = {
 const Banner = () => {
   return (
     <>
+      <span id="about"></span>
       <div style={bgImage}>
         <div className="container min-h-[550px] flex justify-center items-center py-12 sm:py-0">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Image Section */}
-            <div>
+            <div data-aos="zoom-in">
               <img
                 src={bannerImage}
                 alt="white coffee banner"
@@ -30,30 +31,48 @@ const Banner = () => {
             </div>
             {/* Text Section */}
             <div className="flex flex-col justify-center gap-6 sm:pt-0">
-              <h1 className="text-3xl sm:text-4xl font-cursive font-bold capitalize">
+              <h1
+                data-aos="fade-up"
+                className="text-3xl sm:text-4xl font-cursive font-bold capitalize"
+              >
                 premium blend coffee
               </h1>
-              <p className="text-sm text-gray-500 tracking-wider leading-5">
+              <p
+                data-aos="fade-up"
+                className="text-sm text-gray-500 tracking-wider leading-5"
+              >
                 A rich and smooth coffee blend crafted for a premium taste
                 experience, An explosion of flavors, delivering a truly
                 delightful experience in every sip.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="space-y-5">
-                  <div className="flex items-center gap-3">
+                  <div data-aos="fade-up" className="flex items-center gap-3">
                     <CiCoffeeCup className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-red-200" />
                     <span className="capitalize">premium coffee</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    className="flex items-center gap-3"
+                  >
                     <IoFastFood className="text-2xl h-12 w-12 shadow-sm p-3 rounded-full bg-orange-200" />
                     <span className="capitalize">hot coffee</span>
                   </div>
-                  <div className="flex items-center gap-3">
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-offset="0"
+                    className="flex items-center gap-3"
+                  >
                     <GiFoodTruck className="text-4xl h-12 w-12 shadow-sm p-3 rounded-full bg-yellow-200" />
                     <span className="capitalize">cold coffee</span>
                   </div>
                 </div>
-                <div className="border-l-4 border-primary pl-6 space-y-3">
+                <div
+                  data-aos="fade-left"
+                  className="border-l-4 border-primary pl-6 space-y-3"
+                >
                   <h1 className="text-2xl font-semibold font-cursive capitalize">
                     tea lover
                   </h1>
