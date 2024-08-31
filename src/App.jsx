@@ -7,6 +7,7 @@ import Products from "./components/ProductsCard/Products";
 import Banner from "./components/Banner/Banner";
 import AppStore from "./components/AppStore/AppStore";
 import Testimonials from "./components/Testimonial/Testimonials";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
         <Banner />
         <AppStore />
         <Testimonials />
+        <Footer />
       </div>
     </>
   );
